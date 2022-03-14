@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokedex LaunchX</title>
+</head>
+<body>
+    <h1>Busca un pokemon</h1>
+    <form action="" onsubmit="searchPokemon(event)">
+        <input type="" name="pokemon" autocomplete="off">
+    </form>
+    <h1>Variante shiny</h1>
+    <form action="" onsubmit="searchPokemon2(event)">
+        <input type="" name="pokemon" autocomplete="off">
+    </form>
+    <div data-poke-card class="poke-card">
+        <div class="circulos-conteiner">
+            <div class="circulos1"></div>
+            <div class="circulos2"></div>
+            <div class="circulos3"></div>
+        </div>
+        <hr>
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" src="./pokeball.png"  width="50%">
+            <div data-poke-name>Pokedex</div>
+            <div data-poke-id></div>
+        </div>
+        
+        <div class="etiquetas">TYPES</div>
+        <div data-poke-types class="poke-types"></div>
+        <div class="etiquetas">STATS</div>
+        <div data-poke-stats class="poke-stats"></div>
+        <div class="etiquetas">ABILITIES</div>
+        <div data-poke-abilities class="poke-abilities"></div>
+    </div>
+    
+</body>
+<footer>
+    <script src="./pokedex.js" type="text/javascript" defer></script>
+</footer>
+</html>
